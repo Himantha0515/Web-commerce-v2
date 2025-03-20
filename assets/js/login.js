@@ -35,7 +35,7 @@ loginButton.addEventListener("click", function(e) {
     
     // Delay the redirect to allow the fade-out effect to complete
     setTimeout(function() {
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     }, 500); // 500ms delay to match the CSS transition duration
 });
 
