@@ -82,7 +82,7 @@
       <h2 class="title">Featured Products</h2>
       <div class="row">
         <div class="col-4">
-          <a href="product-details.html">
+          <a href="product-details-1.html">
             <img src="./assets/images/product-1.jpg" alt=""
           /></a>
           <h4>Red Printed T-shirt</h4>
@@ -93,65 +93,261 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>400.00rs</p>
+           <!-- Quantity Selector -->
+           <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
         </div>
+        
+        <!-- JavaScript for Quantity Selector -->
+        <script>
+          function increaseQuantity(button) {
+            let quantitySpan = button.previousElementSibling;
+            let quantity = parseInt(quantitySpan.innerText);
+            quantitySpan.innerText = quantity + 1;
+          }
+        
+          function decreaseQuantity(button) {
+            let quantitySpan = button.nextElementSibling;
+            let quantity = parseInt(quantitySpan.innerText);
+            if (quantity > 1) {
+              quantitySpan.innerText = quantity - 1;
+            }
+          }
+        </script>
+        
+        <!-- CSS for Styling -->
+        <style>
+          .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+          }
+          
+          .quantity-btn {
+            background-color: #f2f2f2;
+            border: none;
+            padding: 5px 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        
+          .quantity {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        </style>
 
-        <div class="col-4">
-          <img src="./assets/images/product-2.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>400.00rs</p>
-        </div>
 
-        <div class="col-4">
-          <img src="./assets/images/product-3.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>400.00rs</p>
-        </div>
-        <div class="col-4">
-          <img src="./assets/images/product-4.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>400.00rs</p>
-        </div>
+
+<div class="col-4">
+  <a href="product-details-2.html">
+    <img src="./assets/images/product-2.jpg" alt="HRX Shoe" />
+  </a>
+  <h4>HRX Shoe</h4>
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
+
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
+
+
+
+
+<div class="col-4">
+  <a href="product-details-3.html">
+    <img src="./assets/images/product-3.jpg" alt="Smart fit trek pant" />
+  </a>
+  <h4>Smart fit trek pant</h4>
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
+
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
+
+
+
+
+<div class="col-4">
+  <a href="product-details-4.html">
+    <img src="./assets/images/product-4.jpg" alt="PUMA T-shirt" />
+  </a>
+  <h4>PUMA T-shirt</h4>
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
+
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
+
       </div>
       <h2 class="title">Latest Products</h2>
       <div class="row">
         <div class="col-4">
-          <img src="./assets/images/product-5.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>400.00rs</p>
-        </div>
-
-        <div class="col-4">
-          <img src="./assets/images/product-6.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <a href="product-details-5.html">
+            <img src="./assets/images/product-5.jpg" alt="Nike Shoe" />
+          </a>
+          <h4>Nike Shoe</h4>
+          
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -159,87 +355,494 @@
             <i class="fa fa-star-half-o"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>400.00rs</p>
+        
+          <!-- Quantity Selector -->
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
         </div>
+        
+        <!-- JavaScript for Quantity Selector -->
+        <script>
+          function increaseQuantity(button) {
+            let quantitySpan = button.previousElementSibling;
+            let quantity = parseInt(quantitySpan.innerText);
+            quantitySpan.innerText = quantity + 1;
+          }
+        
+          function decreaseQuantity(button) {
+            let quantitySpan = button.nextElementSibling;
+            let quantity = parseInt(quantitySpan.innerText);
+            if (quantity > 1) {
+              quantitySpan.innerText = quantity - 1;
+            }
+          }
+        </script>
+        
+        <!-- CSS for Styling -->
+        <style>
+          .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+          }
+          
+          .quantity-btn {
+            background-color: #f2f2f2;
+            border: none;
+            padding: 5px 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        
+          .quantity {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        </style>
+
+<div class="col-4">
+  <a href="product-details-6.html">
+    <img src="./assets/images/product-6.jpg" alt="Nike Shoe" />
+  </a>
+  <h4>Nike Black T-shirt
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
+
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
+
+<div class="col-4">
+  <a href="product-details-7.html">
+    <img src="./assets/images/product-7.jpg" alt="Nike Shoe Socks" />
+  </a>
+  <h4>Nike Shoe Socks</h4>
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
+
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
+<div class="col-4">
+  <a href="product-details-8.html">
+    <img src="./assets/images/product-8.jpg" alt="Fossil watch" />
+  </a>
+  <h4>Fossil watch</h4>
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
+
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
+<div class="col-4">
+  <a href="product-details-9.html">
+    <img src="./assets/images/product-9.jpg" alt="Roaster watch" />
+  </a>
+  <h4>Roaster watch</h4>
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
+
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
+        
 
         <div class="col-4">
-          <img src="./assets/images/product-7.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <a href="product-details-10.html">
+            <img src="./assets/images/product-10.jpg" alt="HRX Red and black shoe" />
+          </a>
+          <h4>HRX Red and black shoe</h4>
+          
           <div class="rating">
-            <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>400.00rs</p>
-        </div>
-        <div class="col-4">
-          <img src="./assets/images/product-8.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>400.00rs</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <img src="./assets/images/product-9.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
+        
+          <!-- Quantity Selector -->
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
           </div>
-          <p>400.00rs</p>
         </div>
+        
+        <!-- JavaScript for Quantity Selector -->
+        <script>
+          function increaseQuantity(button) {
+            let quantitySpan = button.previousElementSibling;
+            let quantity = parseInt(quantitySpan.innerText);
+            quantitySpan.innerText = quantity + 1;
+          }
+        
+          function decreaseQuantity(button) {
+            let quantitySpan = button.nextElementSibling;
+            let quantity = parseInt(quantitySpan.innerText);
+            if (quantity > 1) {
+              quantitySpan.innerText = quantity - 1;
+            }
+          }
+        </script>
+        
+        <!-- CSS for Styling -->
+        <style>
+          .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+          }
+          
+          .quantity-btn {
+            background-color: #f2f2f2;
+            border: none;
+            padding: 5px 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        
+          .quantity {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        </style>
 
-        <div class="col-4">
-          <img src="./assets/images/product-10.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>400.00rs</p>
-        </div>
+<div class="col-4">
+  <a href="product-details-11.html">
+    <img src="./assets/images/product-11.jpg" alt="Roadster grey shoe" />
+  </a>
+  <h4>Roadster grey shoe</h4>
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
 
-        <div class="col-4">
-          <img src="./assets/images/product-11.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>400.00rs</p>
-        </div>
-        <div class="col-4">
-          <img src="./assets/images/product-12.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>400.00rs</p>
-        </div>
-      </div>
-    </div>
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
+<div class="col-4">
+  <a href="product-details-12.html">
+    <img src="./assets/images/product-12.jpg" alt="Smart fit trek pant" />
+  </a>
+  <h4>Smart fit trek pant</h4>
+  
+  <div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+  </div>
+
+  <!-- Quantity Selector -->
+  <div class="quantity-selector">
+    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+    <span class="quantity">1</span>
+    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Selector -->
+<script>
+  function increaseQuantity(button) {
+    let quantitySpan = button.previousElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    quantitySpan.innerText = quantity + 1;
+  }
+
+  function decreaseQuantity(button) {
+    let quantitySpan = button.nextElementSibling;
+    let quantity = parseInt(quantitySpan.innerText);
+    if (quantity > 1) {
+      quantitySpan.innerText = quantity - 1;
+    }
+  }
+</script>
+
+<!-- CSS for Styling -->
+<style>
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>
 
     <!-------- Offer --------->
     <div class="offer">
